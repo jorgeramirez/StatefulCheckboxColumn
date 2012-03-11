@@ -14,7 +14,9 @@ Example
 -------
 A working example showing this plugin in action can be found under
 the test/ directory. In order to make it work you need to change 
-the following two lines inside the test/example.html file
+the following two lines inside the test/example.html file:
 
-*<link rel="stylesheet" type="text/css" href="/lib/extjs/resources/css/ext-all.css">
-*<script type="text/javascript" src="/lib/extjs/ext-all-debug.js"></script>
+`
+<link rel="stylesheet" type="text/css" href="/lib/extjs/resources/css/ext-all.css">
+<script type="text/javascript" src="/lib/extjs/ext-all-debug.js"></script>
+`
