@@ -5,10 +5,8 @@ Defines a grid plugin that injects a checkbox column in the
 grid and handle the selection of the items through checkbox
 selection. It also adds 'itemscheckedchange' event to the grid.
 
-This class uses a @link {Ext.state.Provider} state provider
-to mantain the currently selected items after page loads or
-paging.
-
+This class uses a Ext.state.Provider to mantain the currently 
+selected items after page loads or paging.
 
 Example
 -------
