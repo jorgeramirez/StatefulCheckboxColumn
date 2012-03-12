@@ -80,9 +80,24 @@ Ext.define('Ext.ux.grid.plugin.StatefulCheckboxColumn', {
     
     headerCheckedCls: Ext.baseCSSPrefix + 'grid-hd-checker-on',
     
-    init: function(grid) {
+    constructor: function(cfg) {
         var me = this;
         
+        cfg = cfg || {};
+        Ext.apply(me, cfg);
+        
+        if(!me.stateId){
+            Ext.Error.raise("stateId must be defined");
+        }
+        if(!me.recordIndex){
+            Ext.Error.raise("recordIndex must be defined");
+        }
+        
+        me.callParent([cfg]);
+    },
+    
+    init: function(grid) {
+        var me = this;
         me.grid = grid;
         me.grid.addEvents(
             /**

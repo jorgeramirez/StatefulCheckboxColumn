@@ -101,11 +101,9 @@ Ext.onReady(function(){
         loadMask: true,
         plugins: [
             {
-                //Ext.create('Ext.ux.grid.plugin.StatefulCheckboxColumn', {
-            ptype: 'statefulcheckboxcolumn',
-            recordIndex: 'threadid',
-            stateId: 'ForumsBrowser',
-                //})            
+                ptype: 'statefulcheckboxcolumn',
+                recordIndex: 'threadid',
+                stateId: 'ForumsBrowser',
             }
         ],
         viewConfig: {
