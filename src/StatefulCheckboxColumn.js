@@ -276,10 +276,6 @@ Ext.define('Ext.ux.grid.plugin.StatefulCheckboxColumn', {
             state = me.getState(),
             value = record.get(me.recordIndex);
             
-        if(view.sortedRecordsMap !== undefined){
-            value = view.store.getAt(view.sortedRecordsMap[index]).get(me.recordIndex);
-        }
-            
         if (checkbox) {
             checkbox = Ext.getDom(checkbox);
             if(!checkbox.checked){
